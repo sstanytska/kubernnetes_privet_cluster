@@ -1,0 +1,1 @@
+# kubernnetes_privet_cluster
