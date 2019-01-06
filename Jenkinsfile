@@ -1,7 +1,7 @@
 pipeline{
     agent any
     parameters {
-      string(defaultValue: "plan",  name: "action",  description: "Do you want plan or apply ")
+      string(defaultValue: "plan",  name: "action",  description: "Do you want plan or apply/destroy")
     }
     stages{
         stage("Pull repo"){
