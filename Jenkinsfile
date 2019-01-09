@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage("Pull repo"){
             steps{
-                git 'https://github.com/farrukh90/terraform.git'
+                git 'https://github.com/sstanytska/terraform.git'
             }
         }
         stage("Terraform init"){
