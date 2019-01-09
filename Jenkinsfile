@@ -19,7 +19,7 @@ pipeline{
         stage("Terraform Apply"){
             steps{
                 ws("${workspace}/uat/kubernetes_cluster_private"){
-                    sh "terraform ${action} -auto-approve"
+                    sh "terraform ${action}"
                 }
             }
         }
