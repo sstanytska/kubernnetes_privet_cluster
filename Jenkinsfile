@@ -16,7 +16,7 @@ pipeline{
                 }
             }
         }
-        stage("Terraform Apply"){
+        stage("Terraform Plan"){
             steps{
                 ws("${workspace}/uat/kubernetes_private_cluster"){
                     sh "terraform ${action}"
