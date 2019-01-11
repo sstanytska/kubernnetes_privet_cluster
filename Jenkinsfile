@@ -11,14 +11,14 @@ pipeline{
         }
         stage("Terraform init"){
             steps{
-                ws("${workspace}/uat/kubernetes_cluster_private"){
+                ws("${workspace}/uat/kubernetes_private_cluster"){
                     sh "terraform init"
                 }
             }
         }
         stage("Terraform Apply"){
             steps{
-                ws("${workspace}/uat/kubernetes_cluster_private"){
+                ws("${workspace}/uat/kubernetes_private_cluster"){
                     sh "terraform ${action}"
                 }
             }
